@@ -45,7 +45,7 @@ const InfectionRate = ({ population, setPopulation }) => {
             <Slider
               value={percent}
               step={10}
-              min={1}
+              min={10}
               max={50}
               onChange={(_, value) => setPercent(value)}
             />
