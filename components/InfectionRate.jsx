@@ -10,7 +10,7 @@ import Card, {
 
 const InfectionRate = ({ population, setPopulation }) => {
   const [percent, setPercent] = useState(30);
-  const [rate, setRate] = useState(10);
+  const [rate, setRate] = useState(20);
   const [currentlyInfected, setCurrentlyInfected] = useState(100);
 
   const percentInfected = (population * percent) / 100;
@@ -46,7 +46,7 @@ const InfectionRate = ({ population, setPopulation }) => {
               value={percent}
               step={10}
               min={10}
-              max={50}
+              max={90}
               onChange={(_, value) => setPercent(value)}
             />
           </div>
@@ -61,7 +61,12 @@ const InfectionRate = ({ population, setPopulation }) => {
           <div className="mb-1 w-20">{rate}%</div>
 
           <div className="flex-1">
-            <Slider value={rate} onChange={(_, value) => setRate(value)} />
+            <Slider
+              value={rate}
+              min={1}
+              max={50}
+              onChange={(_, value) => setRate(value)}
+            />
           </div>
         </div>
       </CardContent>
