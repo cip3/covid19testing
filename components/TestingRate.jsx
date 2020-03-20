@@ -10,7 +10,7 @@ import Card, {
 
 const TestingRate = ({ population, setPopulation }) => {
   const [percent, setPercent] = useState(30);
-  const [tests, setTests] = useState(1000);
+  const [tests, setTests] = useState(2000);
 
   const totalTests = (population * percent) / 100;
   const days = Math.round(totalTests / tests);
