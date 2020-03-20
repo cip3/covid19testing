@@ -52,7 +52,7 @@ const InfectionRate = ({ population, setPopulation }) => {
           </div>
         </div>
 
-        <p>{percentInfected.toLocaleString()} Infected</p>
+        <p>{Math.round(percentInfected).toLocaleString()} Infected</p>
       </CardContent>
 
       <CardContent>
