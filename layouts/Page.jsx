@@ -23,14 +23,12 @@ const PageLayout = ({
       />
     </Head>
 
-    <div className="antialiased min-h-screen">
-      <div>
-        <Header />
+    <div className="antialiased min-h-screen bg-gray-100">
+      <Header />
 
-        {children}
+      {children}
 
-        <Footer />
-      </div>
+      <Footer />
     </div>
 
     <style jsx global>{`
