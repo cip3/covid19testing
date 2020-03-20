@@ -4,7 +4,7 @@ import TestingRate from "../components/TestingRate";
 import InfectionRate from "../components/InfectionRate";
 
 const IndexPage = () => {
-  const [population, setPopulation] = useState(100000);
+  const [population, setPopulation] = useState(1000000);
 
   return (
     <PageLayout>
