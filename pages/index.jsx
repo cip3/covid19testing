@@ -8,11 +8,17 @@ const IndexPage = () => {
 
   return (
     <PageLayout>
-      <div>
-        <h1 className="text-xl">Coronavirus Testing</h1>
+      <div className="max-w-6xl mx-auto flex flex-wrap p-2 md:p-4">
+        <div className="p-2 md:p-4 w-full md:w-1/2">
+          <InfectionRate
+            population={population}
+            setPopulation={setPopulation}
+          />
+        </div>
 
-        <InfectionRate population={population} setPopulation={setPopulation} />
-        <TestingRate population={population} setPopulation={setPopulation} />
+        <div className="p-2 md:p-4 w-full md:w-1/2">
+          <TestingRate population={population} setPopulation={setPopulation} />
+        </div>
       </div>
     </PageLayout>
   );
