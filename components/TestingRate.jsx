@@ -69,7 +69,7 @@ const TestingRate = ({ population, setPopulation }) => {
 
       <CardContent>
         <CardSubHeading>Number of Days</CardSubHeading>
-        {days}
+        <p className="text-xl">{days}</p>
       </CardContent>
     </Card>
   );
