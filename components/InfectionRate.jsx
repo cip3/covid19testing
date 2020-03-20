@@ -45,12 +45,14 @@ const InfectionRate = ({ population, setPopulation }) => {
             <Slider
               value={percent}
               step={10}
+              min={1}
+              max={50}
               onChange={(_, value) => setPercent(value)}
             />
           </div>
         </div>
 
-        <p>{percentInfected} Infected</p>
+        <p>{percentInfected.toLocaleString()} Infected</p>
       </CardContent>
 
       <CardContent>

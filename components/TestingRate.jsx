@@ -47,7 +47,7 @@ const TestingRate = ({ population, setPopulation }) => {
           </div>
         </div>
 
-        <p>{totalTests} Tests</p>
+        <p>{totalTests.toLocaleString()} Tests</p>
       </CardContent>
 
       <CardContent>
