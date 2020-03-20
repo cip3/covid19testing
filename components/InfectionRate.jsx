@@ -11,7 +11,7 @@ import Card, {
 const InfectionRate = ({ population, setPopulation }) => {
   const [percent, setPercent] = useState(30);
   const [rate, setRate] = useState(10);
-  const [currentlyInfected, setCurrentlyInfected] = useState(1);
+  const [currentlyInfected, setCurrentlyInfected] = useState(100);
 
   const percentInfected = (population * percent) / 100;
   const days = Math.round(
