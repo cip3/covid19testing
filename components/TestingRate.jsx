@@ -53,7 +53,7 @@ const TestingRate = ({ population, setPopulation }) => {
       <CardContent>
         <CardSubHeading>Tests per Day</CardSubHeading>
         <div className="flex items-center">
-          <div className="mb-1 w-20">{tests}%</div>
+          <div className="mb-1 w-20">{tests}</div>
 
           <div className="flex-1">
             <Slider

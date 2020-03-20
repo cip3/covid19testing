@@ -39,7 +39,7 @@ const InfectionRate = ({ population, setPopulation }) => {
       <CardContent>
         <CardSubHeading>Percent at Peak Infection</CardSubHeading>
         <div className="flex items-center">
-          <div className="mb-1 w-20">{rate}%</div>
+          <div className="mb-1 w-20">{percent}%</div>
 
           <div className="flex-1">
             <Slider
