@@ -33,7 +33,7 @@ const TestingRate = ({ population, setPopulation }) => {
       </CardContent>
 
       <CardContent>
-        <CardSubHeading>Percent of </CardSubHeading>
+        <CardSubHeading>Percent of Population</CardSubHeading>
         <div className="flex items-center">
           <div className="mb-1 w-20">{percent}%</div>
 
