@@ -36,53 +36,49 @@ const InfectionRate = ({ population, setPopulation }) => {
         />
       </CardContent>
 
-      <div>
-        <form>
-          <CardContent>
-            <CardSubHeading>Percent at Peak Infection</CardSubHeading>
-            <div className="flex items-center">
-              <div className="w-12">{rate}%</div>
+      <CardContent>
+        <CardSubHeading>Percent at Peak Infection</CardSubHeading>
+        <div className="flex items-center">
+          <div className="w-12">{rate}%</div>
 
-              <div className="flex-1">
-                <Slider
-                  value={percent}
-                  step={5}
-                  onChange={(_, value) => setPercent(value)}
-                />
-              </div>
-            </div>
-
-            <p>{percentInfected} Infected</p>
-          </CardContent>
-
-          <CardContent>
-            <CardSubHeading>Rate of Growth</CardSubHeading>
-            <div className="flex items-center">
-              <div className="w-12">{rate}%</div>
-
-              <div className="flex-1">
-                <Slider value={rate} onChange={(_, value) => setRate(value)} />
-              </div>
-            </div>
-          </CardContent>
-
-          <CardContent>
-            <TextField
-              fullWidth
-              label="Currently Infected"
-              variant="filled"
-              value={currentlyInfected}
-              type="number"
-              onChange={x => setCurrentlyInfected(x.target.value)}
+          <div className="flex-1">
+            <Slider
+              value={percent}
+              step={5}
+              onChange={(_, value) => setPercent(value)}
             />
-          </CardContent>
+          </div>
+        </div>
 
-          <CardContent>
-            <CardSubHeading>Number of Days</CardSubHeading>
-            {days}
-          </CardContent>
-        </form>
-      </div>
+        <p>{percentInfected} Infected</p>
+      </CardContent>
+
+      <CardContent>
+        <CardSubHeading>Rate of Growth</CardSubHeading>
+        <div className="flex items-center">
+          <div className="w-12">{rate}%</div>
+
+          <div className="flex-1">
+            <Slider value={rate} onChange={(_, value) => setRate(value)} />
+          </div>
+        </div>
+      </CardContent>
+
+      <CardContent>
+        <TextField
+          fullWidth
+          label="Currently Infected"
+          variant="filled"
+          value={currentlyInfected}
+          type="number"
+          onChange={x => setCurrentlyInfected(x.target.value)}
+        />
+      </CardContent>
+
+      <CardContent>
+        <CardSubHeading>Number of Days</CardSubHeading>
+        {days}
+      </CardContent>
     </Card>
   );
 };
