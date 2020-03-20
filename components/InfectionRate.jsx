@@ -44,7 +44,7 @@ const InfectionRate = ({ population, setPopulation }) => {
           <div className="flex-1">
             <Slider
               value={percent}
-              step={5}
+              step={10}
               onChange={(_, value) => setPercent(value)}
             />
           </div>
