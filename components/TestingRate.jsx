@@ -13,7 +13,7 @@ const TestingRate = ({ population, setPopulation }) => {
 
   return (
     <div>
-      <h2 className="text-lg">Infection Rates</h2>
+      <h2 className="text-lg">Testing Rates</h2>
       {population}
       <div>
         <form>
