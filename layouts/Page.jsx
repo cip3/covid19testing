@@ -8,7 +8,7 @@ const PageLayout = ({
   description = "Covid 19 Testing",
   children
 }) => (
-  <>
+  <div>
     <Head>
       <title>{title}</title>
       <meta name="description" content={description} />
@@ -38,7 +38,7 @@ const PageLayout = ({
         line-height: 1.6;
       }
     `}</style>
-  </>
+  </div>
 );
 
 export default PageLayout;
