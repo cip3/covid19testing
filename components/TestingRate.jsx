@@ -47,7 +47,7 @@ const TestingRate = ({ population, setPopulation }) => {
           </div>
         </div>
 
-        <p>{Math.rounde(totalTests).toLocaleString()} Tests</p>
+        <p>{Math.round(totalTests).toLocaleString()} Tests</p>
       </CardContent>
 
       <CardContent>
