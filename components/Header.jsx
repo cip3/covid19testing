@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => (
   <div>
-    <p>Header</p>
+    <p className="text-2xl text-center p-4">COVID-19 Testing</p>
   </div>
 );
 
